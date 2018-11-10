@@ -1,0 +1,167 @@
+% E. Dunham -- Resume
+% Contents Copyright (C) 2014 - 2016, E. Dunham
+
+% LaTeX code for rendering the resume is distributed under the MIT license.
+% See LICENSE.txt. It means you can use the code for whatever you want,
+% including your own resume, but I'm not liable if it catches your computer on
+% fire.
+
+% Template originally developed by E. Dunham
+% https://github.com/edunham/resume/blob/master/resume.tex
+
+\documentclass[11pt]{article} % Set default font size to 11pt
+
+
+% Some settings that the stuff hidden in the preamble will reference
+\def \whitespaciness { 0 } % pt. bigger numbers = emptier page. 0 is ok.
+\def \typeoffill {\dotfill} % hfill makes blank, dotfill makes dotted lines.
+
+
+\input{preamble}
+\begin{document}
+
+\centerline{{\Huge \bf E. Dunham}}
+
+\bigskip
+
+\contact{resume@edunham.net}
+        {edunham.net}
+        {github.com/edunham}
+        {Portland, Oregon \& Remote}
+
+\heading{Skills}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\skill{Systems Administration}
+      {SaltStack, TravisCI, Ansible, BuildBot, Apache, DNS, LDAP, SSH}
+
+\skill{Development}
+      {Python, Bash, Rust, HTML/CSS/Javascript}
+
+\skill{Community}
+      {Teaching, public speaking, event planning, curriculum design}
+
+\skill{Collaboration}
+      {IRC/Slack, Git \& GitHub, Sphinx, Pandoc, Jira/RT/Bugzilla}
+
+%\skill{Robotics}
+%      {Mechanical design \& prototyping, 3D modeling, OpenCV, Arduino}
+
+\heading{Employment}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{description}
+\squish
+\experience{Mozilla Research}
+           {DevOps Engineer}
+           {05/2015 - present}
+
+Improved hosting and continuous integration infrastructure for teams
+including Rust, Servo, \& VR.
+
+Configured systems using SaltStack, Ansible, Docker, Terraform.
+
+Maintained BuildBot deployment on Linux, Windows, and OS X hosts (physical and
+AWS servers).
+
+Administered multiple GitHub organizations and collaborated with AppVeyor and
+TravisCI.
+
+Mentored new contributors and represented Rust and Servo projects at
+conferences.
+
+Deployed security best practices, including migrating 2 teams to 1password.
+
+\experience{Urban Airship}
+           {Operations Team Intern}
+           {06/2014 - 09/2014}
+
+Migrated services using Chef and Jenkins to facilitate datacenter move.
+
+Led interdisciplinary Hack Week team to develop Flask frontend to internal
+LDAP API.
+
+Audited and improved documentation for over 30 internal Java, Go, and Python
+services.
+
+\experience{OSU Open Source Lab}
+           {Student Systems Administrator}
+           {12/2012 - 06/2014}
+
+Solved hardware and software problems for over 100 hosted projects.
+
+\experience{Intel}
+           {Software Enabling Group USB3 Team Intern}
+           {06/2012 - 09/2012}
+
+Collaborated using agile development with scrum methodology.
+
+Prototyped solution to double Android USB3 throughput with Java, C, \CPP.
+
+\end{description}
+
+\heading{Community}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{description}
+\squish
+\experience{PDX Rust Users Group}
+           {Organizer}
+           {2015 - 2017}
+
+Organized monthly meetings, communicated users' feedback to Rust core team.
+
+\experience{Rust Community Team}
+           {Volunteer}
+           {2016 - 2018}
+
+Represented Rust project at events. Produced \& distributed stickers, plushies, training resources.
+
+\experience{OSU DevOps Bootcamp}
+           {Founder}
+           {2013 - 2015}
+
+Designed and implemented comprehensive systems engineering curriculum.
+
+Distributed Apache 2.0 licensed curriculum (devopsbootcamp.osuosl.org)
+
+\experience{OSU Linux Users Group}
+           {President}
+           {2012 - 2014}
+
+Organized weekly meetings, mentored students in FOSS involvement
+
+\end{description}
+
+\heading{Academics}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{description}
+\squish
+\experience{Oregon State University}
+           {}
+           {2010-2015}
+
+Upper-division coursework in Computer Science including Operating Systems,\\
+Software Engineering, Analysis of Algorithms, Cryptography, and Applied Robotics.
+
+\end{description}
+
+\heading{Recent Speaking Engagements}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\squish
+
+\event{Linux.conf.au}
+      {01/2018}
+      {}
+      {Should you rewrite in Rust?}
+
+\event{GitHub Universe}
+      {10/2017}
+      {}
+      {Building a better browser engine on GitHub}
+
+\event{RustFest Kyiv}
+      {04/2017}
+      {Keynote lecture}
+      {Spreading Rust}
+
+\hfill \small ...and more at https://edunham.net/pages/talks.html
+
+\end{document}
